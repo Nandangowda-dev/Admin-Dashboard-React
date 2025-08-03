@@ -70,7 +70,7 @@ const UserManagement: React.FC = () => {
         </Button>
       </div>
       <Card className="border-0 shadow-sm">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 mt-4 gap-4">
           <Input placeholder="Search users..." prefix={<SearchOutlined />} className="border border-gray-300 !rounded-button"/>
           <Select placeholder="Filter by status" className="w-full">
             <Option value="all">All Status</Option>
@@ -84,7 +84,7 @@ const UserManagement: React.FC = () => {
           </Button>
         </div>
       </Card>
-      <Card className="border-0 shadow-sm">
+      <Card className="border-0 mt-4 shadow-sm">
         <Table
           columns={userColumns}
           dataSource={recentUsers}
